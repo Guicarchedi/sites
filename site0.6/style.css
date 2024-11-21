@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Exo:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor0: #749DA6;
+    --cor1: #3C6D78;
+    --cor2: #C4D5D9;
+    --cor3: #133840;
+    --cor4: #052B33;
+
+    --font0: "Exo", sans-serif;
+    --font1: "Capriola", sans-serif;
+    --font2: "Poppins", sans-serif;
+    --font3: "Oswald", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo{
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#athletico:hover{
+    border: 2px solid;
+    border-top-color: red;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: red;
+}
+
+#botafogo:hover{
+    border: 2px solid;
+    border-top-color: white;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: white;
+}
+
+#corinthians:hover{
+    border: 2px solid;
+    border-top-color: black;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: black;
+}
+
+#cruzeiro:hover{
+    border: 2px solid;
+    border-top-color: blue;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: blue;
+}
+
+#flamengo:hover{
+    border: 2px solid;
+    border-top-color: red;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: red;
+}
+
+#internacional:hover{
+    border: 2px solid;
+    border-top-color: red;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: red;
+}
+
+#juventude:hover{
+    border: 2px solid;
+    border-top-color: rgb(0, 184, 0);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: rgb(0, 184, 0);
+}
+
+#palmeiras:hover{
+    border: 2px solid;
+    border-top-color: green;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: green;
+}
+
+#bragantino:hover{
+    border: 2px solid;
+    border-top-color: black;
+    border-right-color: white;
+    border-bottom-color: red;
+    border-left-color: white;
+}
+
+#saoPaulo:hover{
+    border: 2px solid;
+    border-top-color: red;
+    border-right-color: white;
+    border-bottom-color: black;
+    border-left-color: white;
+}
+
+#vitoria:hover{
+    border: 2px solid;
+    border-top-color: white;
+    border-right-color: black;
+    border-bottom-color: red;
+    border-left-color: black;
+}
+
+img{
+    width: 180px;
+}
+
+.cabeça{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    & img{
+        width: 100px;
+    }
+}
+
+.nariz{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    & input{
+        background-color: var(--cor2);
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.377);
+        position: relative;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    & button{
+        background-color: var(--cor3);
+        color: white;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: absolute;
+        top: 9.9%;
+        left: 55%;
+        padding: 10px 15px;
+    }
+}
+
+.olho-direito{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & i{
+        background-color: #C4D5D9;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    & a{
+        color: white;
+        font-family: var(--font0);
+        font-size: 1.2em;
+        padding: 2.5px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    & a:hover{
+        color: var(--cor2);
+        font-size: 1.4em;
+        padding: 5px;
+        text-decoration: underline;
+    }
+}
+
+.pescoço{
+    background-color: var(--cor4);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ padding: 5px;
+
+ & a{
+    color: var(--cor2);
+    font-family: var(--font1);
+    font-size: 1.1em;
+    padding: 2.5px;
+    text-decoration: none;
+    transition: 0.3s;
+ }
+
+ & a:hover{
+    color: white;
+    font-size: 1.3em;
+    text-decoration: underline;
+    padding: 5px;
+ }
+}
+
+.tronco{
+    & .conteudo{
+        background-color: var(--cor0);
+        max-width: 1000px;
+        padding: 20px;
+        margin: 0 auto;
+
+        & .peitoral{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: var(--cor4);
+            padding: 10px;
+            margin-bottom: 10px;
+
+            & h2{
+                color: white;
+                font-family: var(--font3);
+                font-size: 2.5em;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+
+            & p{
+                color: white;
+                font-family: var(--font2);
+                font-weight: 300;
+            }
+        }
+
+        & .itens-conteudos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+
+            & .item{
+                background-color: var(--cor1);
+                box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.144);
+                border-radius: 10px;
+                max-width: 225px;
+                height: 350px;
+                padding: 10px;
+                margin: 10px;
+                transition: 0.3s;
+
+                & a{
+                    color: black;
+                    text-decoration: none;
+                    padding: 5px;
+
+                    & .time{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        & img{
+                            width: 100px;
+                            margin: 10px 0;
+                        }
+
+                        & h3{
+                            color: var(--cor2);
+                            font-family: var(--font2);
+                            font-weight: 300;
+                            font-size: 1.3em;
+                            margin-bottom: 10px;
+                        }
+
+                        & p{
+                            color: var(--cor2);
+                            font-family: var(--font1);
+                            font-size: 0.8em;
+                            text-align: left;
+                            line-height: 17px;
+                        } 
+                    }
+                }
+            }
+            & .item:hover{
+                height: 370px;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: var(--cor1);
+    color: white;
+    font-family: var(--font0);
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+
+    & p{
+        margin: 5px;
+    }
+}
