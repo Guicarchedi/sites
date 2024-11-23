@@ -166,6 +166,7 @@ main > article{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
         
         & .item{
             background-color: var(--cor2);
@@ -208,7 +209,10 @@ main > article{
         & .item:hover{
             border: 1px solid black;
             width: 260px;
-            height: 360px;
+            height: 360px; 
         }
+    }
+    & #brasilairaoB{
+        
     }
 }
