@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --cor: #2E338C;
+    --cor1: #03A64A;
+    --cor2: #025928;
+    --cor3: #F2B705;
+    --cor4: #e2e2e2;
+    --cor5: #3a40af;
+
+    --fontPD: Arial, Helvetica, sans-serif;
+    --fontT: "Bruno Ace SC", sans-serif;
+    --fontP: "Exo 2", sans-serif;
+    --fontF: "Josefin Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+    font-family: var(--fontPD);
+}
+
+header{
+    background-color: var(--cor);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 20px;
+    
+    & h1{
+        font-family: var(--fontT);
+        font-size: 2.2em;
+        font-weight: 200;
+    }
+    
+    & p{
+        font-family: var(--fontP);
+        font-size: 0.8em;
+        position: absolute;
+        top: 6.5%;
+        left: 22%;
+    }
+}
+
+header > nav{
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+
+    & a{
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-radius: 50%;
+        transition: 0.3s;
+        padding: 10px;
+    }
+    & a:hover{
+        background-color: var(--cor5);
+        color: var(--cor4);
+        font-size: 1.3em;
+    }
+}
+
+.menu{
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+
+    & button{
+        background-color: transparent;
+        color: var(--cor4);
+        font-family: var(--fontP);
+        font-size: 0.8em;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px;
+        transition: 0.5s;
+    }
+    & button:hover{
+        background-color: #03A64A;
+        color: var(--cor);
+        font-size: 1em;
+    }
+}
