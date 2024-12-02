@@ -102,3 +102,73 @@ header > nav{
         font-size: 1em;
     }
 }
+
+main > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor4);
+    box-shadow: 2px 2px 13px black;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+
+    & p{
+        font-family: var(--fontP);
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.5em;
+        max-width: 400px;
+
+        & a{
+            color: #025928;
+            font-family: var(--fontP);
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        & a:hover{
+            color: #03A64A;
+            text-decoration: underline;
+        }
+    }
+    & p:hover{
+        font-size: 1.3em;
+    }
+
+    & .text1{
+        margin-right: 50px;
+    }
+    & .text2{
+        margin-left: 50px;
+    }
+}
+
+main .direita{
+    margin-right: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: inset 2px 2px 13px rgba(0, 0, 0, 0.267);
+}
+
+main .esquerda{
+    margin-left: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+footer{
+    background-color: var(--cor);
+    color: white;
+    padding: 10px;
+
+    & div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    & img{
+        width: 100px;
+    }
+}
