@@ -149,13 +149,25 @@ article > div{
     }
 }
 
+.link{
+    text-decoration: none;
+}
+
 .historia > div{
     & h2{
         font-family: var(--fontT);
         font-weight: 200;
         font-size: 1.8em;
         color: var(--cor2);
+        border-radius: 10px;
         margin-bottom: 20px;
+        padding: 5px;
+        transition: 0.2s;
+    }
+    & h2:hover{
+        background-color: #bbbbbb6b;
+        color: var(--cor1);
+        font-size: 1.9em;
     }
 }
 
