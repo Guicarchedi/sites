@@ -6,24 +6,25 @@
     <link rel="shortcut icon" href="imagens/imagem-favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Store - Open</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
     <header class="cabeçalho">
         <div class="cabeçalho-info">
-            <p>Por mais R$15,00 você pode usar o nosso <i class="fa-solid fa-truck-fast">caminhão rapido</i></p>
-            <p><i class="fa-solid fa-phone">(11) 5555-7893</i></p>
+            <p class="info">Por mais R$15,00 você pode usar o nosso <i class="fa-solid fa-truck-fast">FasTruck</i></p>
+            <p class="telefone"><i class="fa-solid fa-phone">(11) 5555-7893</i></p>
         </div>
         <section class="cabeçalho-section">
             <div class="cabeçalho-titulo-botao">
-                <h1 class="cabeçalho-titulo">Store <span>Web</span></h1>
+                <h1 class="titulo">Store <span>Web</span></h1>
                 <div class="botao-pesquisa">
                     <input type="text" placeholder="Pesquisar...">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
             <nav class="cabeçalho-menu">
-                <a href="#"><i class="fa-regular fa-user">Login</i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="login" href="#"><i class="fa-regular fa-user"></i> Login</a>
+                <a id="carrinho" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </nav>
         </section>
     </header>
@@ -82,7 +83,7 @@
                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
         </div>
-        <div class="info">
+        <div class="inform">
             <h4>Sobre</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum fugiat explicabo exercitationem provident adipisci rerum, eveniet modi eum laboriosam quod? Vero reiciendis, commodi consectetur vitae neque voluptas incidunt totam! <br> <a href="#">Saiba mais</a></p>
         </div>
