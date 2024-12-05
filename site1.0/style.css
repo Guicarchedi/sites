@@ -21,17 +21,20 @@
 }
 
 /* estilizando conteudo do site */
-.conteudo{
+.container{
     background-color: #ddd;
     font-family: var(--padrao);
 }
 
+/* estilizando o cabeçalho da pagina */
 .cabeçalho{
     background-color: var(--cor1);
     color: white;
+    border-bottom: 1px solid white;
     padding-bottom: 20px;
 }
 
+/* estilizando informação inicial da pagina */
 .cabeçalho-info{
     background-color: black;
     color: white;
@@ -44,21 +47,25 @@
     justify-content: space-between;
     padding: 5px;
 
+    /* estilizando paragrafo de informação */
     & .info{
         margin-left: 20px;
     }
 
+    /* estilizando numero de contato */
     & .telefone{
         margin-right: 20px;
     }
 }
 
+/* estilizando seção do cabeçalho */
 .cabeçalho-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
 
+    /* estilizando div do titulo e botão */
     & .cabeçalho-titulo-botao{
         display: flex;
         align-items: center;
@@ -66,22 +73,26 @@
         gap: 10px;
         margin-left: 20px;
 
+        /* estilizando titulo */
         & .titulo{
             font-family: var(--titulo);
             font-size: 3em;
             font-weight: 600;
             text-shadow: 2px 2px 0px rgb(0, 0, 0);
 
+            /* estilizando parte expecifica do titutlo */
             & span{
                 color: var(--cor);
             }
         }
 
+        /* estilizando botão de pesquisa */
         & .botao-pesquisa{
             display: flex;
             flex-direction: row;
             align-items: center;
 
+            /* estilizando barra de pesquisa */
             & input{
                 background-color: #eee;
                 border: none;
@@ -93,6 +104,7 @@
                 border: 1px solid var(--cor);
             }
 
+            /* estilizando botão de pesquisa */
             & button{
                 background-color: var(--cor);
                 border: none;
@@ -107,12 +119,14 @@
         }
     }
 
+    /* estilizando menu do cabeçalho */
     .cabeçalho-menu{
         display: flex;
         align-items: center;
         gap: 30px;
         margin-right: 20px;
 
+        /* estilizando area de login do cabeçalho */
         #login{
             color: white;
             font-family: var(--paragrafo);
@@ -121,6 +135,7 @@
             text-decoration: none;
             transition: 0.3s;
 
+            /* estilizando icone de login do cabeçalho */
             & i{
                 background-color: var(--cor2);
                 color: white;
@@ -141,6 +156,7 @@
             }
         }
 
+        /* estilizando carrinho de compra */
         #carrinho{
             color: white;
             font-size: 1.2em;
@@ -153,6 +169,77 @@
             background-color: #2b9c2b;
             font-size: 1.3em;
             padding: 7px;
+        }
+    }
+}
+
+/* estilizando conteudo do site */
+.conteudo{
+    background-color: #222222;
+    padding: 30px;
+}
+
+.imagem-produto{
+    background-image: linear-gradient(to right, var(--cor), transparent);
+    width: 300px;
+}
+
+.conteudo-principal{
+    background-color: var(--cor2);
+    max-width: 1000px;
+    padding: 30px;
+    margin: 0 auto;
+
+    & .item{
+        background-color: var(--cor1);
+        color: white;
+        width: 800px;
+        padding: 0px 10px 0px 0px;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    & .item-conteudo{
+        & .titulo-produto{
+            font-family: var(--titulo);
+            font-size: 2.3em;
+            font-weight: normal;
+            margin-bottom: 20px;
+            text-indent: 20px;
+        }
+
+        & .paragrafo-produto{
+            font-family: var(--paragrafo);
+            text-align: justify;
+            text-indent: 30px;
+            max-width: 50vw;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        & .botao-produto{
+            background-color: var(--cor);
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            padding: 15px;
+            position: absolute;
+            top: 68%;
+            left: 64%;
+
+            & .link-produto{
+                color: white;
+                font-family: var(--paragrafo);
+                font-size: 0.9em;
+                font-weight: bolder;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            & .link-produto:hover{
+                font-size: 1.1em;
+            }
         }
     }
 }
