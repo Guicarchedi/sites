@@ -226,8 +226,8 @@
             outline: none;
             padding: 15px;
             position: absolute;
-            top: 68%;
-            left: 64%;
+            left: 67%;
+    
 
             & .link-produto{
                 color: white;
@@ -242,4 +242,48 @@
             }
         }
     }
+}
+
+.patrocinios{
+    background-color: #3b3b3b;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+
+    & .titulo-patrocinio{
+        background-image: linear-gradient(to right, var(--cor1), transparent);
+        color: var(--cor);
+        font-family: var(--titulo);
+        font-weight: normal;
+        text-indent: 30px;
+        padding: 7px;
+        margin-top: 10px;
+    }
+
+    & .patrocinios-secton{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 30px 0px;
+
+        & .bloco-imagem{
+            background-color: rgba(92, 92, 92, 0.212);
+            box-shadow: 0px 0px 5px var(--cor);
+            border-radius: 10px;
+            padding: 5px 15px;
+            transition: 0.3s;
+
+            & a{
+                color: transparent;
+                text-decoration: none;
+            }
+        }
+        & .bloco-imagem:hover{
+            padding: 7px 17px;
+        }
+    }
+}
+
+.patrocinios .imagem-patrocinio{
+    width: 100px;
 }
